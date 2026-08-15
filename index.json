@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "name": "rose-pine",
+      "repo": "https://github.com/eldios/riso-theme-rose-pine.git",
+      "description": "All natural pine, faux fur and a bit of soho vibes"
+    }
+  ]
+}
