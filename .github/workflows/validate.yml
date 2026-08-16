@@ -1,0 +1,31 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  themes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: install riso
+        run: cargo install --git https://github.com/eldios/riso riso-cli
+      - name: validate every theme in the index
+        run: |
+          set -euo pipefail
+          fail=0
+          while IFS=$'\t' read -r name repo rev; do
+            dir=$(mktemp -d)
+            if [ -n "$rev" ] && [ "$rev" != "null" ]; then
+              git clone --quiet "$repo" "$dir" && git -C "$dir" checkout --quiet "$rev"
+            else
+              git clone --quiet --depth 1 "$repo" "$dir"
+            fi
+            echo "== $name"
+            riso theme validate "$dir" || fail=1
+          done < <(jq -r '.themes[] | [.name, .repo, (.rev // "")] | @tsv' index.json)
+          exit "$fail"
