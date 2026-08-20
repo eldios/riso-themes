@@ -6,6 +6,12 @@
       "repo": "https://github.com/eldios/riso-theme-caio.git",
       "description": "riso's mascot in deep violet: lavender accent, cyan glints, five wallpapers",
       "preview": "https://raw.githubusercontent.com/eldios/riso-theme-caio/main/preview.png"
+    },
+    {
+      "name": "tuscany-sunset",
+      "repo": "https://github.com/eldios/riso-theme-tuscany-sunset.git",
+      "description": "Caio watching a Tuscan sunset: dusk teal, sunset orange accent, dark cyan sea",
+      "preview": "https://raw.githubusercontent.com/eldios/riso-theme-tuscany-sunset/main/preview.png"
     }
   ]
 }
