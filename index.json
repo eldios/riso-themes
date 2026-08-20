@@ -4,14 +4,28 @@
     {
       "name": "caio",
       "repo": "https://github.com/eldios/riso-theme-caio.git",
-      "description": "riso's mascot in deep violet: lavender accent, cyan glints, five wallpapers",
-      "preview": "https://raw.githubusercontent.com/eldios/riso-theme-caio/main/preview.png"
+      "description": "Caio in deep violet, with lavender accents, cyan glints, and five wallpapers.",
+      "preview": "https://raw.githubusercontent.com/eldios/riso-theme-caio/main/preview.png",
+      "accent": "#b195e8",
+      "palette": [
+        "#382c54",
+        "#b195e8",
+        "#7ad4d8",
+        "#d8bd78"
+      ]
     },
     {
       "name": "tuscany-sunset",
       "repo": "https://github.com/eldios/riso-theme-tuscany-sunset.git",
-      "description": "Caio watching a Tuscan sunset: dusk teal, sunset orange accent, dark cyan sea",
-      "preview": "https://raw.githubusercontent.com/eldios/riso-theme-tuscany-sunset/main/preview.png"
+      "description": "Caio watching a Tuscan sunset: dusk teal, sunset orange, and a dark cyan sea.",
+      "preview": "https://raw.githubusercontent.com/eldios/riso-theme-tuscany-sunset/main/preview.png",
+      "accent": "#e8955c",
+      "palette": [
+        "#0f1b20",
+        "#e8955c",
+        "#4fb3ba",
+        "#e3b25e"
+      ]
     }
   ]
 }

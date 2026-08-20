@@ -1,0 +1,5 @@
+base_url = "https://eldios.is-a.dev/riso-themes"
+title = "riso themes"
+description = "The riso theme catalog: one palette, your whole desktop."
+compile_sass = false
+build_search_index = false
