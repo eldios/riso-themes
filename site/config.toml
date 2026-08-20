@@ -1,4 +1,4 @@
-base_url = "https://eldios.is-a.dev/riso-themes"
+base_url = "https://catalog.riso.re"
 title = "riso themes"
 description = "The riso theme catalog: one palette, your whole desktop."
 compile_sass = false
