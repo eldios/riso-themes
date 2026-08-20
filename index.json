@@ -2,9 +2,10 @@
   "version": 1,
   "themes": [
     {
-      "name": "rose-pine",
-      "repo": "https://github.com/eldios/riso-theme-rose-pine.git",
-      "description": "All natural pine, faux fur and a bit of soho vibes"
+      "name": "caio",
+      "repo": "https://github.com/eldios/riso-theme-caio.git",
+      "description": "riso's mascot in deep violet: lavender accent, cyan glints, five wallpapers",
+      "preview": "https://raw.githubusercontent.com/eldios/riso-theme-caio/main/preview.png"
     }
   ]
 }
