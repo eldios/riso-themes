@@ -721,7 +721,7 @@
       <p class="eyebrow">Riso themes</p>
       <h1>Rice after midnight.</h1>
       <p class="tagline">One palette, your whole desktop.</p>
-      <p class="catalog-count"><strong>{{ live }} theme{{ live | pluralize }}</strong> ready for the night shift</p>
+      <p class="catalog-count"><strong>{{ live }} theme{{ live | pluralize }}</strong> <span id="count-phrase">ready for the night shift</span></p>
     </header>
 
     <nav class="nav-pills" aria-label="Project links">
@@ -802,6 +802,18 @@
   </main>
 
   <script>
+const states = ["ready", "tuned", "waiting", "warmed up", "lined up", "dressed"];
+const moments = [
+  "for the night shift",
+  "for the small hours",
+  "for tonight's rice",
+  "for your next desktop",
+  "for one more reload",
+  "for whatever 2am brings",
+];
+const pick = (list) => list[Math.floor(Math.random() * list.length)];
+document.getElementById("count-phrase").textContent = pick(states) + " " + pick(moments);
+
     const copyButtons = document.querySelectorAll(".copy-button");
 
     async function copyCommand(button) {
